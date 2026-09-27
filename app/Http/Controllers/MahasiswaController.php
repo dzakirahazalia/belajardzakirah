@@ -8,7 +8,6 @@ class MahasiswaController extends Controller
 {
     public function index()
     {
-        // Menggunakan variabel $mahasiswa agar cocok dengan file Blade kamu
         $mahasiswa = [
             'nama' => 'Dzakirah Azalia',
             'nim' => '251011700497',
