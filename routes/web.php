@@ -2,16 +2,18 @@
 
 use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProjectController;
 
-Route::get('/', function () {
+Route::get('', function () {
     return view('page.home');
 });
 
+Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
+
 Route::get('/profile', [MahasiswaController::class, 'index']);
 
-Route::get('/project', function () {
-    return view('page.project');
-});
+Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
+Route::get('/project/{id}', [ProjectController::class, 'show'])->name('project.show');
 
 Route::get('/about', function () {
     return view('page.about');

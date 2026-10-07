@@ -13,7 +13,7 @@
                 <div class="card-body text-center py-4">
 
                     <img 
-                        src="{{ asset('img/foto.JPG') }}" 
+                        src="{{ asset('img/foto.jpg') }}" 
                         alt="Foto Profil"
                         class="rounded-circle mb-3"
                         style="width: 120px; height: 120px; object-fit: cover;"
